@@ -1,0 +1,54 @@
+body {
+  background: rgb(204, 204, 204);
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+section {
+  background: white;
+  display: block;
+  // margin: 0 auto;
+  // margin-bottom: 0.5cm;
+  // box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+}
+section[size="A4"] {
+  width: 21cm;
+  height: 29.7cm;
+}
+
+@media print {
+  section {
+    box-shadow: none;
+    // padding: 10px 10px !important;
+    // padding: 0 0.2in 0;
+    padding-top: 0.2in;
+    padding-left: 0.2in;
+    // padding-bottom: 0.1in !important;
+    border: 1px solid red;
+    max-height: 100% !important;
+    // margin: 0 !important;
+    /*width: 100%;*/
+  }
+
+  h1 {
+    font-size: 24pt;
+    font-weight: 400;
+    // border: 1px solid red !important;
+  }
+}
+
+@page {
+  size: A4;
+  margin: 0;
+  // orphans: 10;
+  // margin: 19.2px 19.2px;
+  // margin-left: 0.2in;
+}
+
+@page :first {
+  // margin-top: 2in;
+}
