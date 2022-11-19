@@ -1,0 +1,31 @@
+.profile {
+  position: relative;
+  width: 118px;
+  height: 118px;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.9));
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    clip-path: polygon(0% 0%, 80% 0, 100% 20%, 100% 100%, 20% 100%, 0% 80%);
+  }
+
+  &__photo {
+    width: 115px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    clip-path: polygon(0% 0%, 80% 0, 100% 20%, 100% 100%, 20% 100%, 0% 80%);
+  }
+
+  &__text {
+    margin-top: 1.6rem;
+  }
+}
