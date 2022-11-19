@@ -1,0 +1,12 @@
+.heading-primary {
+  line-height: 1;
+  &--main {
+    display: inherit;
+  }
+
+  &--sub {
+    // display: inherit;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+}
