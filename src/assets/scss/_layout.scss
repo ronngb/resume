@@ -1,16 +1,16 @@
-.layout-sidebar,
-.layout-content {
+.sidebar,
+.content {
   float: left;
   height: 100%;
-  padding-top: 2rem;
+  padding-top: 2.8rem;
 }
 
-.layout-sidebar {
-  width: 30%;
-  padding-left: 5rem;
+.sidebar {
+  width: 35%;
+  // padding-left: 5rem;
   background-color: var(--sidebar-bg-color);
 }
 
-.layout-content {
-  width: 70%;
+.content {
+  width: 65%;
 }
