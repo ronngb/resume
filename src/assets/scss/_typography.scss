@@ -2,11 +2,13 @@
   line-height: 1;
   &--main {
     display: inherit;
+    letter-spacing: 3px;
+    line-height: 1.3;
+    font-weight: 400;
   }
 
   &--sub {
-    // display: inherit;
     font-size: 1.6rem;
-    font-weight: bold;
+    font-weight: 700;
   }
 }
