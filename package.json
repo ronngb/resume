@@ -24,5 +24,8 @@
     "prettier": "^2.7.1",
     "sass": "^1.55.0",
     "yargs": "^7.1.2"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.1"
   }
 }
