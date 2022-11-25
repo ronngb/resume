@@ -28,6 +28,7 @@
   }
 
   &__text {
-    margin-top: 1rem;
+    width: min-content;
+    margin: 0 auto;
   }
 }
