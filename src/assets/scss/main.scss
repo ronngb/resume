@@ -1,2 +1,4 @@
-@import "normalize", "base", "layout", "component/profile", "typography",
-  "style";
+@import "normalize", "base", "layout", "typography", "style";
+
+@import "component/profile";
+@import "component/contact";

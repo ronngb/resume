@@ -2,7 +2,9 @@
   --body-bg-color: #cccccc;
   --main-bg-color: white;
   --sidebar-bg-color: #e1e3e3;
+  --base-margin-left: calc((100% - 156.78px) / 2);
   --text-color: black;
+  --fa-li-width: 0.2em;
   box-sizing: border-box;
 }
 
@@ -42,7 +44,8 @@ h1,
 h2,
 h3 {
   text-transform: uppercase;
-  margin: 0;
+  line-height: 1.1;
+  margin: 0.5rem 0;
 }
 
 p {
