@@ -1,5 +1,10 @@
-@import "normalize", "base", "layout", "typography", "style", "utilities";
+@import "base/base";
+@import "base/normalize";
+@import "base/typography";
+@import "base/utilities";
 
 @import "component/profile";
 @import "component/contact";
 @import "component/education";
+
+@import "layout/layout";
