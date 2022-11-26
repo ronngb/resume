@@ -1,0 +1,13 @@
+.education-info {
+  &__text {
+    margin: 0;
+
+    & span {
+      display: inline-block;
+
+      &:last-child {
+        font-style: italic;
+      }
+    }
+  }
+}
