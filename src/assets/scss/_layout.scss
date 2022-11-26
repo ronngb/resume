@@ -1,3 +1,12 @@
+main {
+  // margin-bottom: 0.5cm;
+  // box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+  &[size="A4"] {
+    width: 21cm;
+    height: 29.7cm;
+  }
+}
+
 .sidebar,
 .content {
   float: left;
@@ -7,10 +16,15 @@
 
 .sidebar {
   width: 35%;
-  // padding-left: 5rem;
   background-color: var(--sidebar-bg-color);
 }
 
 .content {
   width: 65%;
+}
+
+@page {
+  size: A4;
+  margin: 0;
+  // margin-left: 0.2in;
 }
