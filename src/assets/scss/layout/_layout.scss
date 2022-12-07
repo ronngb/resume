@@ -17,6 +17,11 @@ main {
 .sidebar {
   width: 35%;
   background-color: var(--sidebar-bg-color);
+  & > .break-line {
+    height: 4px;
+    margin: 25px 0;
+    background-color: #fff;
+  }
 }
 
 .content {
