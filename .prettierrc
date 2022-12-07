@@ -1,5 +1,10 @@
 {
-  "singleAttributePerLine": false,
-  "printWidth": 110,
+  "singleAttributePerLine": false,  
   "bracketSameLine": true,
+  "overrides":[{
+   "files": "*.html",
+      "options": {        
+        "printWidth": 110,
+      }
+  }]
 } 

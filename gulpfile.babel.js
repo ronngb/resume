@@ -19,6 +19,10 @@ const paths = {
     src: "src/assets/scss/main.scss",
     dest: "dist/assets/css",
   },
+  icons: {
+    src: "node_modules/@fortawesome/fontawesome-free/webfonts/*",
+    dest: "dist/assets/webfonts",
+  },
 };
 
 export const clean = () => del(["dist/*/"]);
@@ -35,6 +39,13 @@ export const styles = () => {
     )
     .pipe(gulpif(!PROD, sourcemaps.write("./maps")))
     .pipe(gulp.dest(paths.styles.dest))
+    .pipe(bs.stream());
+};
+
+export const icons = () => {
+  return gulp
+    .src(paths.icons.src)
+    .pipe(gulp.dest(paths.icons.dest))
     .pipe(bs.stream());
 };
 
@@ -56,7 +67,7 @@ export const watch = () => {
   gulp.watch("**/*.html", reload);
 };
 
-export const dev = gulp.series(clean, styles, serve, watch);
-export const prod = gulp.series(clean, styles);
+export const dev = gulp.series(clean, styles, icons, serve, watch);
+export const prod = gulp.series(clean, styles, icons);
 
 exports.default = dev;
