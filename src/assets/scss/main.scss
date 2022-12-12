@@ -1,4 +1,11 @@
+// FONTAWESOME
 @import "base/normalize";
+
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/brands";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/regular";
+
 @import "base/base";
 @import "base/typography";
 @import "base/utilities";
@@ -7,9 +14,6 @@
 @import "component/contact";
 @import "component/education";
 @import "component/skills";
+@import "component/experience";
 
 @import "layout/layout";
-
-@import "../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
-@import "../../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
-@import "../../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
