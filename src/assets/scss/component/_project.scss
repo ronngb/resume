@@ -1,0 +1,47 @@
+%icon {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.project {
+  margin: 0 3.456rem;
+  &-details {
+    &__list {
+      font-size: 1.5rem;
+      margin: 0.5rem 0;
+    }
+  }
+  &__text {
+    &--title {
+      font-size: 1.6rem;
+      text-transform: none;
+    }
+
+    &--link {
+      font-size: 1.5rem;
+      font-style: italic;
+      &::before {
+        @extend %icon;
+        font: var(--fa-font-solid);
+        content: "\f0ac";
+        margin: 0 0.2rem;
+      }
+    }
+    &--repo {
+      font-size: 1.5rem;
+      font-style: italic;
+      float: right;
+      &::before {
+        @extend %icon;
+        font: var(--fa-font-solid);
+        content: "\f126";
+        margin: 0 0.5rem;
+      }
+    }
+  }
+
+  &__row {
+    padding: 0.5rem 0;
+  }
+}
