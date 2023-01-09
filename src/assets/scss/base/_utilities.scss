@@ -5,3 +5,7 @@
 .base-margin-left {
   margin-left: var(--base-margin-left) !important;
 }
+
+.capitalize {
+  text-transform: capitalize;
+}

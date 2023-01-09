@@ -26,6 +26,36 @@ main {
 
 .content {
   width: 65%;
+  & > section {
+    margin-bottom: 25px;
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-style: italic;
+
+  span {
+    &:nth-child(1) {
+      &::before {
+        @include icon;
+        font: var(--fa-font-solid);
+        content: "\f3c5";
+        margin: 0 0.2rem;
+      }
+    }
+    &:nth-child(2) {
+      &::before {
+        @include icon;
+        font: var(--fa-font-solid);
+        content: "\f073";
+        margin: 0 0.5rem;
+      }
+    }
+  }
 }
 
 @page {

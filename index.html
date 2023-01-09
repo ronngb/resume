@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title></title>
     <link rel="stylesheet" href="dist/assets/css/main.css" />
+    <link rel="stylesheet" href="dist/assets/css/main.min.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet" />
@@ -33,35 +34,41 @@
                 <i class="fa-solid fa-circle fa-stack-2x"></i>
                 <i class="fa-solid fa-envelope fa-stack-1x fa-inverse"></i>
               </span>
-              ronny.gabi@gmail.com
+              <a href="mailto:ronny.gabi@gmail.com" target="_blank" title="Send an email">
+                ronny.gabi@gmail.com
+              </a>
             </li>
             <li class="contact__item">
               <span class="fa-li fa-stack fa-sm">
                 <i class="fa-solid fa-circle fa-stack-2x"></i>
                 <i class="fa-solid fa-phone fa-stack-1x fa-inverse"></i>
               </span>
-              09558711946
+              <a href="" title="Cellphone Number"> 09662557999 </a>
             </li>
             <li class="contact__item">
               <span class="fa-li fa-stack fa-sm">
                 <i class="fa-solid fa-circle fa-stack-2x"></i>
                 <i class="fa-brands fa-linkedin-in fa-stack-1x fa-inverse"></i>
               </span>
-              linked.com/portfolio
+              <a href="www.linkedin.com/in/ronngb" target="_blank" title="My Linkedin Page">
+                linkedin.com/in/ronngb
+              </a>
             </li>
             <li class="contact__item">
               <span class="fa-li fa-stack fa-sm">
                 <i class="fa-solid fa-circle fa-stack-2x"></i>
                 <i class="fa-solid fa-globe fa-stack-1x fa-inverse"></i>
               </span>
-              github.io/portfolio
+              <a href="https://ronngb.github.io/portfolio/" target="_blank" title="My Portfolio website"
+                >ronngb.github.io/portfolio</a
+              >
             </li>
             <li class="contact__item">
               <span class="fa-li fa-stack fa-sm">
                 <i class="fa-solid fa-circle fa-stack-2x"></i>
                 <i class="fa-brands fa-github-alt fa-stack-1x fa-inverse"></i>
               </span>
-              github.com/ronny.gabi
+              <a href="https://github.com/ronngb" target="_blank" title="My Github repo">github.com/ronngb</a>
             </li>
             <li class="contact__item">
               <span class="fa-li fa-stack fa-pull-left fa-sm" style="height: 3em">
@@ -72,23 +79,12 @@
             </li>
           </ul>
         </section>
-        <!-- <div class="break-line"></div>
-        <section class="section-education">
-          <div class="education-info base-margin-left">
-            <h2 class="education-info__title">Education</h2>
-            <h3 class="education-info__subtitle">System Technology Institute(STI)</h3>
-            <p class="education-info__text">
-              <span> Recto Ave, Quiapo, Manila </span>
-              <span> B.S. Computer Science (May 2015) </span>
-            </p>
-          </div>
-        </section> -->
         <div class="break-line"></div>
         <section class="section-skills">
           <div class="skills base-margin-left">
-            <h2 class="skills__title">Skills</h2>
+            <h2 class="skills__heading">Skills</h2>
             <div class="skills__type">
-              <h3 class="skills__subtitle">Front-end</h3>
+              <h3 class="skills__subheading">Front-end</h3>
               <div class="skills__set">
                 <span>Vue</span>
                 <span>HTML</span>
@@ -97,17 +93,18 @@
                 <span>JQuery</span>
                 <span>Javascript</span>
                 <span>Bootstrap</span>
+                <span>Fontawesome</span>
               </div>
             </div>
             <div class="skills__type">
-              <h3 class="skills__subtitle">Back-end</h3>
+              <h3 class="skills__subheading">Back-end</h3>
               <div class="skills__set">
                 <span>PHP</span>
                 <span>Firebase</span>
               </div>
             </div>
             <div class="skills__type">
-              <h3 class="skills__subtitle">Misc</h3>
+              <h3 class="skills__subheading">Misc</h3>
               <div class="skills__set">
                 <span>GIT</span>
                 <span>Github</span>
@@ -125,41 +122,61 @@
             <h2 class="experience__heading">professional experience</h2>
             <hr />
             <div class="experience__details">
-              <h3 class="experience__details--role">PROGRAMMER</h3>
-              <span class="experience__details--company"> Telford Svc Phils., Inc. </span>
-              <div class="experience__row">
-                <span class="experience__details--location">Gen. Trias,Cavite</span>
-                <span class="experience__details--date">Jan – Dec 2018 </span>
+              <h3 class="heading-tertiary">
+                <span class="heading-tertiary--main">IT PROGRAMMER</span>
+                <span class="heading-tertiary--sub"> Solid Business Machines Center, Inc. </span>
+              </h3>
+              <div class="row">
+                <span>Binondo, Manila</span>
+                <span>Mar – Sept 2020 </span>
               </div>
-
-              <ul class="experience__list">
-                <li class="experience__item">
-                  Maintain and Enhance the RH-Temp Monitoring System by eliminating the bugs that outputted
-                  false value base on the standard Rapid Humidity and Temperature in a specific area and added
-                  new feature that automatically log the RH-TEMP to the Database for Data Analysis purposes
-                  using PHP, JavaScript and Laravel
+              <ul>
+                <li>
+                  Developed the quotation module to conveniently make a quotation for the customers, so they
+                  know how much the product or service will cost.
                 </li>
-                <li class="experience__item">
-                  Maintain the Document Controller System by fixing the bugs that preventing the user for
-                  adding new Document and Category to the database of the DCC system using PHP, SQL, Laravel.
+                <li>
+                  Developed the reciept module for printing out the total cost of the product that the
+                  customer checkout.
                 </li>
               </ul>
             </div>
             <div class="experience__details">
-              <h3 class="experience__details--role">Web developer</h3>
-              <span class="experience__details--company">Widget City Co.</span>
-              <div class="experience__row">
-                <span class="experience__details--location icon">Malate, Manila</span>
-                <span class="experience__details--date icon">May – Sept 2017 </span>
+              <h3 class="heading-tertiary">
+                <span class="heading-tertiary--main">PROGRAMMER</span>
+                <span class="heading-tertiary--sub"> Telford Svc Phils., Inc. </span>
+              </h3>
+              <div class="row">
+                <span>Gen. Trias, Cavite</span>
+                <span>Jan – Dec 2018 </span>
               </div>
-              <ul class="experience__list">
-                <li class="experience__item">
-                  Maintain the website, add new product, update the price and other information of the
-                  specific product using the Content Management System platform WordPress.
+              <ul>
+                <li>
+                  Maintained the RH-Temp Monitoring System by fixing bugs and adding a new feature that
+                  automatically logs the temperature to the database using PHP and JavaScript.
                 </li>
-                <li class="experience__item">
-                  Sole Developed the Payment Module Dragon Pay for the new website as one of the payment
-                  options for the customer checkout process, using HTML, PHP, SQL.
+                <li>
+                  Maintained the Document Controller System by fixing bugs that prevented the user from adding
+                  new documents and categories to the database using PHP and SQL.
+                </li>
+              </ul>
+            </div>
+            <div class="experience__details">
+              <h3 class="heading-tertiary">
+                <span class="heading-tertiary--main">Web developer</span>
+                <span class="heading-tertiary--sub"> Widget City Co.</span>
+              </h3>
+              <div class="row">
+                <span>Malate, Manila</span>
+                <span>May – Sept 2017 </span>
+              </div>
+              <ul>
+                <li>
+                  Managed the website by adding new product page, updating the price and other information
+                  using the content management system platform WordPress.
+                </li>
+                <li>
+                  Integrated the Dragon Pay payment module as one of the payment options using HTML and PHP.
                 </li>
               </ul>
             </div>
@@ -170,11 +187,13 @@
             <h2 class="education__heading">education</h2>
             <hr />
             <div class="education-info">
-              <h3 class="education__text--course">BSc Computer Science</h3>
-              <span class="education__text--college">System Technology Institute (STI)</span>
-              <div class="education__row">
-                <span class="education__text--location">Quiapo, Manila</span>
-                <span class="education__text--complete">May 2015 </span>
+              <h3 class="heading-tertiary">
+                <span class="heading-tertiary--main capitalize">BSc Computer Science </span>
+                <span class="heading-tertiary--sub"> System Technology Institute (STI)</span>
+              </h3>
+              <div class="row">
+                <span>Quiapo, Manila</span>
+                <span>May 2015 </span>
               </div>
             </div>
           </div>
@@ -184,42 +203,22 @@
             <h2 class="project__heading">personal project</h2>
             <hr />
             <div class="project-details">
-              <!-- TODO: check all the heading if they have the same font-size -->
-              <h3 class="project__text--title">My Portfolio</h3>
-              <div class="project__row">
-                <span class="project__text--link">
-                  <a href="https://ronngb.github.io/portfolio/">Website</a>
-                </span>
-                <span class="project__text--repo">
-                  <a href="https://github.com/ronngb/portfolio.git"> Source Code </a>
-                </span>
-              </div>
-              <ul class="project-details__list">
-                <li class="project-details__item">
-                  Developed and coded my portfolio website, showcasing my capabilities as a web developer,
-                  personal projects, and information about me.
-                </li>
-                <li class="project-details__item">
-                  By implementing responsive web design, it works well and looks good on all devices.
+              <h3 class="project__title">My Portfolio</h3>
+              <ul>
+                <li>
+                  Developed and coded my portfolio website with responsive web design, showcasing my
+                  capabilities as a web developer, personal projects, and information about me.
                 </li>
               </ul>
             </div>
             <div class="project-details">
-              <h3 class="project__text--title">Passvault</h3>
-              <div class="project__row">
-                <span class="project__text--link">
-                  <a href="https://ronngb.github.io/portfolio/">ronngb.github.io/portfolio</a>
-                </span>
-                <span class="project__text--repo">
-                  <a href="https://github.com/ronngb/portfolio.git"> ronngb/portfolio.git </a>
-                </span>
-              </div>
-              <ul class="project-details__list">
-                <li class="project-details__item">
-                  Developed a password manager called Passvault that securely stores your password with a
-                  stylish neumorphism UI design and user-friendly interface.
+              <h3 class="project__title">Passvault</h3>
+              <ul>
+                <li>
+                  Developed a password manager that stores your password with a stylish neumorphism UI design
+                  and user-friendly interface.
                 </li>
-                <li class="project-details__item">
+                <li>
                   Passvault allows you to keep all your personal digital account information, such as gmail or
                   facebook credentials, in one place, so you never have to worry about losing or forgetting
                   your account information again.
@@ -230,5 +229,7 @@
         </section>
       </div>
     </main>
+    <script src="dist/assets/js/main.js"></script>
+    <script src="dist/assets/js/main.min.js"></script>
   </body>
 </html>
