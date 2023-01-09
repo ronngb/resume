@@ -1,0 +1,25 @@
+.print__button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: fixed;
+  right: 60px;
+  bottom: 40px;
+  border: none;
+  background-color: rgb(255, 64, 129);
+  &:active {
+    transform: scale(0.8);
+    transition: transform 180ms ease-in-out;
+  }
+  &:hover {
+    background-color: rgb(255, 64, 129, 0.8);
+    transition: background-color 180ms ease-in-out;
+  }
+  &::before {
+    @include icon;
+    font: var(--fa-font-solid);
+    content: "\f02f";
+    font-size: 2rem;
+    color: white;
+  }
+}
