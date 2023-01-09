@@ -16,6 +16,7 @@
 
 html {
   font-size: 62.5%;
+  print-color-adjust: exact;
 }
 
 body {
@@ -25,7 +26,7 @@ body {
 
 main {
   background-color: var(--main-bg-color);
-  margin: 0 auto;
+  margin: 1.8rem auto;
 }
 
 h1 {
