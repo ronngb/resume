@@ -7,11 +7,11 @@
     flex-wrap: wrap;
     padding-left: 5px;
     & > span {
-      font-size: 1.3rem;
-      color: rgb(75, 85, 99);
-      background-color: rgb(243, 244, 246);
+      font-size: 1.5rem;
+      color: #fff;
+      background-color: var(--secondary-color);
       padding: 4px 8px;
-      font-weight: 700;
+      font-weight: 500;
       border-radius: 4px;
       margin: 5px 5px 0 0;
     }

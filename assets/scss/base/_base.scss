@@ -1,10 +1,13 @@
 :root {
   --body-bg-color: #cccccc;
   --main-bg-color: white;
-  --sidebar-bg-color: #e1e3e3;
+  --sidebar-bg-color: #ebebeb;
   --base-margin-left: calc((100% - 156.78px) / 2);
   --text-color: black;
   --fa-li-width: 0.2em;
+  --primary-color: #432543;
+  --secondary-color: #a192a1;
+  --tertiary-color: #eaad42;
   box-sizing: border-box;
 }
 
@@ -21,7 +24,7 @@ html {
 
 body {
   background-color: var(--body-bg-color);
-  font-family: "Open Sans", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 main {
@@ -30,15 +33,16 @@ main {
 }
 
 h1 {
-  font-size: 3.2rem;
+  font-size: 3.4rem;
 }
 
 h2 {
-  font-size: 1.7rem;
+  font-size: 1.9rem;
+  color: var(--primary-color);
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 h1,
@@ -66,18 +70,23 @@ a:hover {
 }
 
 hr {
-  border-top: 2.88px solid var(--sidebar-bg-color);
+  border: 1px solid transparent;
   border-radius: 5px;
   margin: 0.5rem 0;
 }
 
 ul {
-  font-size: 1.5rem;
+  font-size: 1.54rem;
   margin: 0.5rem 0;
+  padding-inline-start: 30px;
 }
 
 li {
   margin-bottom: 0.768rem;
+  &::marker {
+    color: var(--tertiary-color);
+    font-size: 1.3em;
+  }
 }
 
 button {

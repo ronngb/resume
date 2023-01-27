@@ -1,0 +1,12 @@
+.qrcode {
+  &-container {
+    position: absolute;
+    bottom: -215px;
+    left: 10px;
+  }
+  &-img {
+    width: 70px;
+    padding: 5px;
+    background-color: #fff;
+  }
+}

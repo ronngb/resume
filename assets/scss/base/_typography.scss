@@ -1,27 +1,33 @@
 .heading-primary {
   line-height: 1;
+  text-transform: capitalize;
+  margin: 1rem 0;
   &--main {
     display: inherit;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     line-height: 1.3;
     font-weight: 400;
+    color: var(--primary-color);
   }
 
   &--sub {
-    font-size: 1.7rem;
-    font-weight: 700;
+    display: inherit;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-indent: 2px;
+    color: var(--tertiary-color);
   }
 }
 
 .heading-tertiary {
   &--main {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     display: inherit;
     margin-bottom: 5px;
   }
   &--sub {
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 1.6rem;
+    font-weight: 400;
     text-transform: capitalize;
   }
 }

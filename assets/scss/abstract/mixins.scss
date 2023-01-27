@@ -3,3 +3,8 @@
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
 }
+
+@mixin heading-position {
+  position: relative;
+  left: -15px;
+}

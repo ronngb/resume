@@ -8,31 +8,35 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/main.min.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Ubuntu:wght@300;400;500;700&display=swap"
       rel="stylesheet" />
   </head>
   <body>
     <main size="A4">
       <div class="sidebar">
         <section class="section-profile">
-          <div class="profile">
-            <img src="assets/images/ronnel.png" class="profile__photo" alt="profile-pic" />
-          </div>
+          <img src="assets/images/ronnel.png" class="profile__photo" alt="profile-pic" />
           <div class="profile__text">
             <h1 class="heading-primary">
               <span class="heading-primary--main">Ronnel Gabiosa</span>
-              <span class="heading-primary--sub">Web Developer</span>
+              <span class="heading-primary--sub">Front-End Web Developer</span>
             </h1>
           </div>
         </section>
         <div class="break-line"></div>
         <section class="section-contact">
-          <h2 class="contact__title base-margin-left">Contact</h2>
-          <ul class="contact__list base-margin-left fa-ul">
+          <h2 class="contact__heading u-margin-left-heading">
+            <span class="fa-stack fa-sm">
+              <i class="fa-solid fa-circle fa-stack-2x"></i>
+              <i class="fa-regular fa-address-book fa-stack-1x fa-inverse"></i>
+            </span>
+            Contact
+          </h2>
+          <ul class="contact__list fa-ul u-margin-left-sidebar">
             <li class="contact__item">
               <span class="fa-li fa-stack fa-sm">
                 <i class="fa-solid fa-circle fa-stack-2x"></i>
-                <i class="fa-solid fa-envelope fa-stack-1x fa-inverse"></i>
+                <i class="fa-solid fa-envelope fa-stack-1x"></i>
               </span>
               <a href="mailto:ronny.gabi@gmail.com" target="_blank" title="Send an email">
                 ronny.gabi@gmail.com
@@ -41,23 +45,23 @@
             <li class="contact__item">
               <span class="fa-li fa-stack fa-sm">
                 <i class="fa-solid fa-circle fa-stack-2x"></i>
-                <i class="fa-solid fa-phone fa-stack-1x fa-inverse"></i>
+                <i class="fa-solid fa-phone fa-stack-1x"></i>
               </span>
-              <a href="" title="Cellphone Number"> 09662557999 </a>
+              <a title="Cellphone Number"> 09662557999 </a>
             </li>
             <li class="contact__item">
               <span class="fa-li fa-stack fa-sm">
                 <i class="fa-solid fa-circle fa-stack-2x"></i>
-                <i class="fa-brands fa-linkedin-in fa-stack-1x fa-inverse"></i>
+                <i class="fa-brands fa-linkedin-in fa-stack-1x"></i>
               </span>
-              <a href="www.linkedin.com/in/ronngb" target="_blank" title="My Linkedin Page">
+              <a href="https://www.linkedin.com/in/ronngb" target="_blank" title="My Linkedin Page">
                 linkedin.com/in/ronngb
               </a>
             </li>
             <li class="contact__item">
               <span class="fa-li fa-stack fa-sm">
                 <i class="fa-solid fa-circle fa-stack-2x"></i>
-                <i class="fa-solid fa-globe fa-stack-1x fa-inverse"></i>
+                <i class="fa-solid fa-globe fa-stack-1x"></i>
               </span>
               <a href="https://ronngb.github.io/portfolio/" target="_blank" title="My Portfolio website"
                 >ronngb.github.io/portfolio</a
@@ -66,14 +70,14 @@
             <li class="contact__item">
               <span class="fa-li fa-stack fa-sm">
                 <i class="fa-solid fa-circle fa-stack-2x"></i>
-                <i class="fa-brands fa-github-alt fa-stack-1x fa-inverse"></i>
+                <i class="fa-brands fa-github-alt fa-stack-1x"></i>
               </span>
               <a href="https://github.com/ronngb" target="_blank" title="My Github repo">github.com/ronngb</a>
             </li>
             <li class="contact__item">
               <span class="fa-li fa-stack fa-pull-left fa-sm" style="height: 3em">
                 <i class="fa-solid fa-circle fa-stack-2x"></i>
-                <i class="fa-solid fa-location-dot fa-stack-1x fa-inverse"></i>
+                <i class="fa-solid fa-location-dot fa-stack-1x"></i>
               </span>
               Blk. 4 Lot 25 Model Community Laurel St. Tondo, Manila
             </li>
@@ -81,9 +85,15 @@
         </section>
         <div class="break-line"></div>
         <section class="section-skills">
-          <div class="skills base-margin-left">
-            <h2 class="skills__heading">Skills</h2>
-            <div class="skills__type">
+          <div class="skills">
+            <h2 class="skills__heading u-margin-left-heading">
+              <span class="fa-stack fa-sm">
+                <i class="fa-solid fa-circle fa-stack-2x"></i>
+                <i class="fa-solid fa-screwdriver-wrench fa-stack-1x fa-inverse"></i>
+              </span>
+              Skills
+            </h2>
+            <div class="skills__type u-margin-left-sidebar">
               <h3 class="skills__subheading">Front-end</h3>
               <div class="skills__set">
                 <span>Vue</span>
@@ -96,14 +106,14 @@
                 <span>Fontawesome</span>
               </div>
             </div>
-            <div class="skills__type">
+            <div class="skills__type u-margin-left-sidebar">
               <h3 class="skills__subheading">Back-end</h3>
               <div class="skills__set">
                 <span>PHP</span>
                 <span>Firebase</span>
               </div>
             </div>
-            <div class="skills__type">
+            <div class="skills__type u-margin-left-sidebar">
               <h3 class="skills__subheading">Misc</h3>
               <div class="skills__set">
                 <span>GIT</span>
@@ -115,11 +125,22 @@
             </div>
           </div>
         </section>
+        <section class="section-qrcode u-pos-relative">
+          <div class="qrcode-container">
+            <img class="qrcode-img" src="assets/images/qrcode.png" alt="portfolio qrcode" />
+          </div>
+        </section>
       </div>
       <div class="content">
         <section class="section-experience">
           <div class="experience">
-            <h2 class="experience__heading">professional experience</h2>
+            <h2 class="experience__heading">
+              <span class="fa-stack fa-sm">
+                <i class="fa-solid fa-circle fa-stack-2x"></i>
+                <i class="fa-solid fa-briefcase fa-stack-1x fa-inverse"></i>
+              </span>
+              professional experience
+            </h2>
             <hr />
             <div class="experience__details">
               <h3 class="heading-tertiary">
@@ -136,7 +157,7 @@
                   know how much the product or service will cost.
                 </li>
                 <li>
-                  Developed the reciept module for printing out the total cost of the product that the
+                  Developed the receipt module for printing out the total cost of the product that the
                   customer checkout.
                 </li>
               </ul>
@@ -184,7 +205,13 @@
         </section>
         <section class="section-education">
           <div class="education">
-            <h2 class="education__heading">education</h2>
+            <h2 class="education__heading">
+              <span class="fa-stack fa-sm">
+                <i class="fa-solid fa-circle fa-stack-2x"></i>
+                <i class="fa-solid fa-graduation-cap fa-stack-1x fa-inverse"></i>
+              </span>
+              education
+            </h2>
             <hr />
             <div class="education-info">
               <h3 class="heading-tertiary">
@@ -200,7 +227,13 @@
         </section>
         <section class="section-project">
           <div class="project">
-            <h2 class="project__heading">personal project</h2>
+            <h2 class="project__heading">
+              <span class="fa-stack fa-sm">
+                <i class="fa-solid fa-circle fa-stack-2x"></i>
+                <i class="fa-solid fa-code fa-stack-1x fa-inverse"></i>
+              </span>
+              personal project
+            </h2>
             <hr />
             <div class="project-details">
               <h3 class="project__title">My Portfolio</h3>

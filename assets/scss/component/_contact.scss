@@ -1,6 +1,14 @@
 .contact {
   &__item {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     margin: 1.2rem 0;
+    i {
+      &:nth-of-type(1) {
+        color: var(--secondary-color);
+      }
+      &:nth-of-type(2) {
+        color: #fff;
+      }
+    }
   }
 }
