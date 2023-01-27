@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "",  
+  "homepage": "https://ronngb.github.io/resume",
   "scripts": {
     "serve": "gulp",
-    "build": "gulp prod --prod",    
+    "build": "gulp prod --prod",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
