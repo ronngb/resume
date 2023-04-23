@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "",  
-  "homepage": "https://ronngb.github.io/resume",
+  
   "scripts": {
     "serve": "gulp",
     "build": "gulp prod --prod",
