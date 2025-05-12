@@ -1,23 +1,24 @@
+import { library, dom } from '@fortawesome/fontawesome-svg-core'
+import { faCircle, faEnvelope, faPhone, faGlobe, faLocationDot, faScrewdriverWrench, faBriefcase, faGraduationCap, faCode, faPrint, faCalendarDays } from '@fortawesome/free-solid-svg-icons'
+import { faAddressBook } from '@fortawesome/free-regular-svg-icons'
+import { faLinkedinIn, faGithubAlt } from "@fortawesome/free-brands-svg-icons"
+
 import '../scss/main.scss'
+
+library.add(faCircle,faAddressBook,faEnvelope,faPhone,faLinkedinIn,faGlobe,faGithubAlt,faLocationDot,faScrewdriverWrench,faBriefcase,faGraduationCap,faCode, faPrint, faCalendarDays)
+
+dom.watch()
 
 document.body.onload = cmdUtilities();
 
 function cmdUtilities() {
   addPrintBtn()
-  addDownloadBtn() 
 }
 
 function addPrintBtn() {
-  const elPrintBtn = document.createElement("button");
-  const mainTag = document.getElementsByTagName("main");
-
-  elPrintBtn.classList.add("print__button");
-
-  elPrintBtn.setAttribute("title", "Print Resume");
-
-  document.body.insertBefore(elPrintBtn, mainTag[0]);
-
-  elPrintBtn.addEventListener("click", () => {
+  const printBtn = document.getElementById("print_button");
+  
+  printBtn.addEventListener("click", () => {
     print();
   });
 }

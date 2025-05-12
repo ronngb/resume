@@ -1,4 +1,4 @@
-@use '../abstract/mixins.scss' as mixins;
+@use "../abstract/mixins.scss" as mixins;
 
 .print__button {
   width: 60px;
@@ -20,13 +20,16 @@
     background-color: rgb(255, 64, 129, 0.8);
     transition: background-color 180ms ease-in-out;
   }
-  &::before {
-    @include mixins.icon;
-    font: var(--fa-font-solid);
-    content: "\f02f";
-    font-size: 2rem;
+  & > svg {
     color: white;
   }
+  // &::before {
+  //   @include mixins.icon;
+  //   font: var(--fa-font-solid);
+  //   content: "\f02f";
+  //   font-size: 2rem;
+  //   color: white;
+  // }
 }
 
 .download__button {
@@ -59,6 +62,5 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -55%);
-
   }
 }
