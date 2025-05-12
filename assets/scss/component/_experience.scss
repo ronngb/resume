@@ -1,9 +1,11 @@
+@use '../abstract/mixins.scss' as mixins;
+
 .experience {
   margin: 0 3.456rem;
 
   &__heading {
     margin-top: 0;
-    @include heading-position;
+    @include mixins.heading-position;
   }
 
   &__details {

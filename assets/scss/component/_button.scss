@@ -1,3 +1,5 @@
+@use '../abstract/mixins.scss' as mixins;
+
 .print__button {
   width: 60px;
   height: 60px;
@@ -19,7 +21,7 @@
     transition: background-color 180ms ease-in-out;
   }
   &::before {
-    @include icon;
+    @include mixins.icon;
     font: var(--fa-font-solid);
     content: "\f02f";
     font-size: 2rem;
@@ -48,7 +50,7 @@
     transition: background-color 180ms ease-in-out;
   }
   &::before {
-    @include icon;
+    @include mixins.icon;
     font: var(--fa-font-solid);
     content: "\f019";
     font-size: 2rem;

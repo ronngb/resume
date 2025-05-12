@@ -1,3 +1,5 @@
+import '../scss/main.scss'
+
 document.body.onload = cmdUtilities();
 
 function cmdUtilities() {

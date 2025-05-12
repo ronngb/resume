@@ -1,24 +1,24 @@
 // FONTAWESOME
-@import "base/normalize";
+@use "base/normalize";
 
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid";
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands";
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/regular";
+@use "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@use "../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+@use "../../node_modules/@fortawesome/fontawesome-free/scss/brands";
+@use "../../node_modules/@fortawesome/fontawesome-free/scss/regular";
 
-@import "abstract/mixins.scss";
+@use "abstract/mixins.scss";
 
-@import "base/base";
-@import "base/typography";
-@import "base/utilities";
+@use "base/base";
+@use "base/typography";
+@use "base/utilities";
 
-@import "component/profile";
-@import "component/contact";
-@import "component/education";
-@import "component/skills";
-@import "component/experience";
-@import "component/project";
-@import "component/button";
-@import "component/qrcode";
+@use "component/profile";
+@use "component/contact";
+@use "component/education";
+@use "component/skills";
+@use "component/experience";
+@use "component/project";
+@use "component/button";
+@use "component/qrcode";
 
-@import "layout/layout";
+@use "layout/layout";

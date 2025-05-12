@@ -1,7 +1,9 @@
+@use '../abstract/mixins.scss' as mixins;
+
 .project {
   margin: 0 3.456rem;
   &__heading {
-    @include heading-position;
+    @include mixins.heading-position;
   }
 
   &__title {
